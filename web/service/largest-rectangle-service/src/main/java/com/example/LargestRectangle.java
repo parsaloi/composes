@@ -9,7 +9,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 public class LargestRectangle {
     public record Result(int area, String errorMessage) {}
 
-    public static int largestRectangleArea(int[] heights) {
+    private static int largestRectangleArea(int[] heights) {
         var stack = new ArrayDeque<Integer>();
         int[] maxArea = {0};
         int[] h = Arrays.copyOf(heights, heights.length + 1);
@@ -24,7 +24,7 @@ public class LargestRectangle {
         return maxArea[0];
     }
 
-    public static int maximalRectangle(int[][] matrix) {
+    private static int maximalRectangle(int[][] matrix) {
         if (matrix.length == 0 || matrix[0].length == 0) return 0;
         int[] heights = new int[matrix[0].length];
         return Arrays.stream(matrix).mapToInt(row -> {
