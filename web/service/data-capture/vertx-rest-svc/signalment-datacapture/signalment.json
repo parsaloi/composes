@@ -1,0 +1,13 @@
+{
+  "microchipID":"455cc0c2-aac3-4f47-ba3e-75dcad4069d6",
+  "dateOfBirth": {
+    "year":2024,
+    "month":11,
+    "dayOfMonth":2
+  },
+  "species":"Canine",
+  "breed":"Labrador",
+  "gender":"Male",
+  "reproductiveStatus":"Neutered",
+  "color":"Black"
+}
