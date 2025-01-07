@@ -193,8 +193,8 @@ fun BillsList(
 ) {
     LazyColumn(
         modifier = modifier.fillMaxSize(),
-        verticalArrangement = Arrangement.spacedBy(8.dp),
-        contentPadding = PaddingValues(16.dp)
+               verticalArrangement = Arrangement.spacedBy(8.dp),
+               contentPadding = PaddingValues(16.dp)
     ) {
         items(bills) { bill ->
             BillCard(bill = bill)
@@ -212,26 +212,40 @@ private fun BillCard(
     ) {
         Column(
             modifier = Modifier
-                .padding(16.dp)
-                .fillMaxWidth()
+            .padding(16.dp)
+            .fillMaxWidth()
         ) {
             Text(
                 text = bill.name,
-                style = MaterialTheme.typography.titleMedium
+                 style = MaterialTheme.typography.titleMedium
             )
             Spacer(modifier = Modifier.height(4.dp))
             Text(
-                text = "KES ${bill.amount}",
-                style = MaterialTheme.typography.bodyMedium
+                text = "$${bill.amount}",
+                 style = MaterialTheme.typography.bodyMedium
             )
             Text(
                 text = "Due: ${bill.dueDate}",
-                style = MaterialTheme.typography.bodyMedium
+                 style = MaterialTheme.typography.bodyMedium
             )
             Text(
                 text = "Category: ${bill.category}",
-                style = MaterialTheme.typography.bodySmall
+                 style = MaterialTheme.typography.bodySmall
             )
         }
+    }
+}
+
+@Composable
+private fun EmptyState(modifier: Modifier = Modifier) {
+    Box(
+        modifier = modifier.fillMaxSize(),
+        contentAlignment = androidx.compose.ui.Alignment.Center
+    ) {
+        Text(
+            text = "No bills yet. Tap + to add one!",
+             style = MaterialTheme.typography.bodyLarge,
+             color = MaterialTheme.colorScheme.onSurfaceVariant
+        )
     }
 }
