@@ -1,7 +1,10 @@
-package com.example.petclinic.model;
+ackage com.example.petclinic.model;
 
 import org.springframework.data.annotation.Id;
 
+/**
+ * Pet representation
+ */
 public class Pet {
     @Id
     private Long id;
