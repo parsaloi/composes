@@ -1,4 +1,4 @@
-module Components.OutputContainer exposing (view)
+module Widgets.OutputContainer exposing (view)
 
 import Html exposing (Html, div, text)
 import Html.Attributes exposing (class, style)

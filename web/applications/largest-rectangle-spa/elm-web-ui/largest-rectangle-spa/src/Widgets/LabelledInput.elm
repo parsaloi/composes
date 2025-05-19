@@ -1,4 +1,4 @@
-module Components.LabelledInput exposing (view)
+module Widgets.LabelledInput exposing (view)
 
 import Html exposing (Html, div, input, label, text)
 import Html.Attributes exposing (class, type_, value, style)
