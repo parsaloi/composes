@@ -1,4 +1,4 @@
-module Components.IconButton exposing (view)
+module Widgets.IconButton exposing (view)
 
 import Html exposing (Html, button, text)
 import Html.Attributes exposing (class, style)

@@ -7,9 +7,9 @@ import Http
 import Json.Encode as Encode
 import Json.Decode as Decode
 import Widgets.InputWidget as InputWidget
-import Components.IconButton as IconButton
-import Components.OutputContainer as OutputContainer
-import Components.MessageDialog as MessageDialog
+import Widgets.IconButton as IconButton
+import Widgets.OutputContainer as OutputContainer
+import Widgets.MessageDialog as MessageDialog
 
 type alias Model =
     { matrix : List (List Int)

@@ -7,6 +7,6 @@ import Theme
 view : Html msg
 view =
     div [ class "footer", style "background-color" Theme.colors.primary, style "color" "white" ]
-        [ text "© 2024 Ian Parsaloi | "
+        [ text "© 2025 Elvis Parsaloi | "
         , a [ href "https://github.com/parsaloi/composes", style "color" "white" ] [ text "Source Code" ]
         ]

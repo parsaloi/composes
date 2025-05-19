@@ -3,7 +3,7 @@ module Widgets.InputWidget exposing (view)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (onInput, onClick)
-import Components.LabelledInput as LabelledInput
+import Widgets.LabelledInput as LabelledInput
 import Theme
 
 type alias InputWidgetConfig msg =

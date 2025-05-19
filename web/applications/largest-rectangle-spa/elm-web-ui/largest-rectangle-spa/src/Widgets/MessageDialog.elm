@@ -1,4 +1,4 @@
-module Components.MessageDialog exposing (view)
+module Widgets.MessageDialog exposing (view)
 
 import Html exposing (Html, div, text, button)
 import Html.Attributes exposing (class, style)
