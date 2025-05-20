@@ -6,8 +6,9 @@ export default defineConfig({
   server: {
     port: 8000,
   },
-  publicDir: 'public',
+  publicDir: './publicScr',
   build: {
-    outDir: 'dist',
+    outDir: 'public',
   },
+  base: "/public/"
 });
