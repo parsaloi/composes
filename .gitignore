@@ -1,3 +1,6 @@
+# js stuff
+node_modules/
+
 # Built application files
 *.apk
 *.ap_
