@@ -9,3 +9,13 @@ npm install react react-dom rxjs styled-components @vitejs/plugin-react tailwind
 npm run dev
 
 ```
+
+
+To build
+
+```bash
+npx vite build --outDir /public/
+
+# Verify build
+npx vite serve --base /public/
+```
