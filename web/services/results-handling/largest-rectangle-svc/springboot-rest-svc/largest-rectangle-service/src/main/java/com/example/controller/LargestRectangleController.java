@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 @RestController
 @RequestMapping("/largest-rectangle")
-@CrossOrigin(origins = "http://localhost:8000")
+@CrossOrigin(origins = {"http://localhost:8000", "http://localhost:8001"})
 public class LargestRectangleController {
     
     private final LargestRectangleService service;
